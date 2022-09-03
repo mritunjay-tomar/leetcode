@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/java-negative-subarray/problem?isFullScreen=true
+package Array;// https://www.hackerrank.com/challenges/java-negative-subarray/problem?isFullScreen=true
 
 public class Subarray {
 

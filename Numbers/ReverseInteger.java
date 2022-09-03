@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/reverse-integer/
+package Numbers;// https://leetcode.com/problems/reverse-integer/
 
 public class ReverseInteger {
     public static void main(String[] args) {

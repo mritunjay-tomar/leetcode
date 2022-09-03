@@ -1,7 +1,4 @@
-// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-
-import java.util.HashSet;
-import java.util.Set;
+package Array;// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {

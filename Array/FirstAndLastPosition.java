@@ -1,3 +1,5 @@
+package Array;
+
 public class FirstAndLastPosition {
     public void searchRange2(int[] nums, int target) {
         int i = 0, j = nums.length-1;

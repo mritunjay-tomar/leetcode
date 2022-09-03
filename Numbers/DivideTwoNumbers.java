@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/divide-two-integers/
+package Numbers;// https://leetcode.com/problems/divide-two-integers/
 
 public class DivideTwoNumbers {
     public static int divide(int dividend, int divisor) {

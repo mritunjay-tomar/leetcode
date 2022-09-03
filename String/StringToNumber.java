@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/string-to-integer-atoi/
+package String;// https://leetcode.com/problems/string-to-integer-atoi/
 
 class StringToNumber {
 

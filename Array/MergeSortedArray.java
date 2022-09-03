@@ -1,3 +1,5 @@
+package Array;
+
 public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if(nums1.length == 0 || nums2.length == 0) return;
