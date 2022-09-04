@@ -1,4 +1,6 @@
-package LinkedList;// https://leetcode.com/problems/3sum/
+package LinkedList;
+
+// https://leetcode.com/problems/3sum/
 
 import java.util.ArrayList;
 import java.util.List;

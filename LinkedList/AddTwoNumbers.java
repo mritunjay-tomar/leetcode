@@ -4,16 +4,18 @@ import java.math.BigInteger;
 
 // https://leetcode.com/problems/add-two-numbers/
 
-public class AddTwoNumbers {
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode node) {
-            this.val = val;
-            this.next = node;
-        }
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode node) {
+        this.val = val;
+        this.next = node;
     }
+}
+
+public class AddTwoNumbers {
     public ListNode getReturnList(BigInteger number) {
         BigInteger ten = new BigInteger("10");
         BigInteger zero = new BigInteger("0");

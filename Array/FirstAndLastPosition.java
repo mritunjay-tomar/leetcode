@@ -1,5 +1,7 @@
 package Array;
 
+// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
 public class FirstAndLastPosition {
     public void searchRange2(int[] nums, int target) {
         int i = 0, j = nums.length-1;
