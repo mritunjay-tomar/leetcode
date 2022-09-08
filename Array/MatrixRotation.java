@@ -39,7 +39,7 @@ public class MatrixRotation {
     }
 
     public static void main(String[] args) {
-        RotateArray object = new RotateArray();
+        MatrixRotation object = new MatrixRotation();
         int[][] matrix = {{1,2,3}, {4,5,6}, {7,8,9}};
 
         object.print(matrix);

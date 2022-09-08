@@ -2,7 +2,7 @@ package LinkedList;
 
 // https://leetcode.com/problems/swap-nodes-in-pairs/
 
-public class SwapNodes {
+public class SwapNodePairs {
     public ListNode swapNodes(ListNode head) {
         if(head == null || head.next == null) return head;
 
@@ -33,7 +33,7 @@ public class SwapNodes {
     }
 
     public static void main(String[] args) {
-        SwapNodes object = new SwapNodes();
+        SwapNodePairs object = new SwapNodePairs();
 
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
         ListNode head2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
