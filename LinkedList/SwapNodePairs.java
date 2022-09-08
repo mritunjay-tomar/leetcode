@@ -2,41 +2,46 @@ package LinkedList;
 
 // https://leetcode.com/problems/swap-nodes-in-pairs/
 
-public class SwapNodePairs {
-    public ListNode swapPairs(ListNode head) {
-        ListNode newHead = new ListNode();
-        while(head.next != null) {
-            if(newHead == null) {
-                newHead = head.next;
-                newHead.next = head;
-            } else {
-                newHead =  head;
-                newHead.next =  head.next;
-                newHead = newHead.next.next;
-            }
-            head = head.next.next;
-        }
-        newHead.next = head.next;
-        head = head.next;
+public class SwapNodes {
+    public ListNode swapNodes(ListNode head) {
+        if(head == null || head.next == null) return head;
 
-        return newHead;
+        ListNode tempHead = head;
+        while(head != null) {
+            if(head.next == null) break;
+            ListNode first = head;
+            ListNode second = head.next;
+
+            int temp = first.val;
+            first.val = second.val;
+            second.val = temp;
+
+            head = head.next;
+            head = head.next;
+        }
+
+        print(tempHead);
+        return tempHead;
     }
 
     public void print(ListNode head) {
-        while(head.next != null) {
+        while(head != null) {
             System.out.print(head.val + " ");
             head = head.next;
         }
-        System.out.print(head.val + " ");
+        System.out.println();
     }
 
     public static void main(String[] args) {
+        SwapNodes object = new SwapNodes();
+
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
         ListNode head2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        SwapNodePairs object = new SwapNodePairs();
-        object.swapPairs(head);
-        object.print(head);
-        object.swapPairs(head2);
-        object.print(head2);
+        ListNode head3 = new ListNode();
+        ListNode head4 = new ListNode(1);
+        head = object.swapNodes(head);
+        head2 = object.swapNodes(head2);
+        head3 = object.swapNodes(head3);
+        head4 = object.swapNodes(head4);
     }
 }
