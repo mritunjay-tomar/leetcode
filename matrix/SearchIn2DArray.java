@@ -1,5 +1,7 @@
 package matrix;
 
+// https://leetcode.com/problems/search-a-2d-matrix/
+
 public class SearchIn2DArray {
     public boolean searchMatrix(int[][] matrix, int target) {
         int n = matrix.length, m=matrix[0].length;

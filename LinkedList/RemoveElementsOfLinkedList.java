@@ -44,14 +44,13 @@ public class RemoveElementsOfLinkedList {
 
         ListNode head = new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))));
         head = object.removeElements(head, 5);
-        object.print(head);
+        head.print(head);
 
         object.removeElements(null, 5);
         ListNode head2 = object.removeElements(new ListNode(1), 2);
-        object.print(head2);
+        head2.print(head2);
 
         ListNode head3 = new ListNode(5, new ListNode(5, new ListNode(5, new ListNode(5, new ListNode(5, new ListNode(5))))));
-        head3 = object.removeElements(head3, 5);
-        object.print(head3);
+        object.removeElements(head3, 5);
     }
 }

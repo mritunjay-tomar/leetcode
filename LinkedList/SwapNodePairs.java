@@ -20,16 +20,8 @@ public class SwapNodePairs {
             head = head.next;
         }
 
-        print(tempHead);
+        tempHead.print(tempHead);
         return tempHead;
-    }
-
-    public void print(ListNode head) {
-        while(head != null) {
-            System.out.print(head.val + " ");
-            head = head.next;
-        }
-        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -39,9 +31,9 @@ public class SwapNodePairs {
         ListNode head2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
         ListNode head3 = new ListNode();
         ListNode head4 = new ListNode(1);
-        head = object.swapNodes(head);
-        head2 = object.swapNodes(head2);
-        head3 = object.swapNodes(head3);
-        head4 = object.swapNodes(head4);
+        object.swapNodes(head);
+        object.swapNodes(head2);
+        object.swapNodes(head3);
+        object.swapNodes(head4);
     }
 }
